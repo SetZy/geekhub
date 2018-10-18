@@ -12,7 +12,8 @@ function func(){
 			n++
 		}
 
-		if (n/2==0) {
+
+		if (n%2==0) {
 			result.innerHTML = 'В строке парное количество цифр'
 		} else {
 			result.innerHTML = 'В строке НЕ парное количество цифр'
