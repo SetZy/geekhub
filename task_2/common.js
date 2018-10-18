@@ -1,37 +1,7 @@
-function func(){
-	var input1 = document.getElementById('input1').value;
+function CheckTheNumberOfNumbers(){
+	var InputForEnterData = document.getElementById('InputForEnterData').value;
 	var result = document.getElementById('result');
-	var res = input1.match(/\d/g).length;
-
-	/*var res = input1.split(/\d/g).length-1;*/
-	if (res%2 == 0) {
-		result.innerHTML = 'В строке парное количество цифр'
-	} else {
-		result.innerHTML = 'В строке НЕ парное количество цифр'
-	}
-	alert(res)
+	var res = InputForEnterData.match(/\d/g).length;
 	
-	
-	/*var arr = input1.split('');
-	var n = 0;
-	for(var i = 0; i < arr.length; i++){
-		var check = parseInt(arr[i])
-		if (isNaN(check)) {
-			n = n;
-		} else {
-			n++
-		}
-
-
-		if (n%2==0) {
-			result.innerHTML = 'В строке парное количество цифр'
-		} else {
-			result.innerHTML = 'В строке НЕ парное количество цифр'
-		}
-	}*/
-	
-
-	
-	
-	
+	res%2 == 0 ? result.innerHTML = 'В строке парное количество цифр' : result.innerHTML = 'В строке НЕ парное количество цифр';	
 }
