@@ -1,7 +1,9 @@
 function func(){
 	var input1 = document.getElementById('input1').value;
 	var result = document.getElementById('result');
-	var res = input1.split(/\d/).length-1;
+	var res = input1.match(/\d/g).length;
+
+	/*var res = input1.split(/\d/g).length-1;*/
 	if (res%2 == 0) {
 		result.innerHTML = 'В строке парное количество цифр'
 	} else {
