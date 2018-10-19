@@ -4,8 +4,13 @@ function summNumbers(){
 	var arrNumbers = inputForEnterData.split('');
 	var res = 1;
 
-	for (var i = 0; i < arrNumbers.length; i++){
+	if (!inputForEnterData.match(/^\d$/)){
+		alert('Введите пожалуйста числовое значение');
+		return false;
+	} else {
+		for (var i = 0; i < arrNumbers.length; i++){
 		res = res * arrNumbers[i];
+		}
 	}
 
 	res % 2 == 0 ? result.innerHTML = 'Произведение цифр в строке парное' : result.innerHTML = 'Произведение цифр в строке НЕ парное';
