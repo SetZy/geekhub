@@ -4439,6 +4439,9 @@ body {
     .shoes .owl-dots .owl-dot {
         font-size: 20px
     }
+    .shoes .owl-dots .owl-dot.active {
+        font-size: 20px
+    }
     .shoes .shoes-text .h1 {
         font-size: 20px
     }
@@ -4476,6 +4479,9 @@ body {
         top: 10%
     }
     .shoes .owl-dots .owl-dot {
+        font-size: 15px
+    }
+    .shoes .owl-dots .owl-dot.active {
         font-size: 15px
     }
     .for-join .left-part .h1 {
@@ -4530,8 +4536,9 @@ body {
         font-size: 10px;
         height: 1px
     }
-    .shoes .owl-dots .owl-dot .active {
-        height: 1px
+    .shoes .owl-dots .owl-dot.active {
+        height: 1px;
+        font-size: 10px
     }
 }
 
@@ -4577,7 +4584,8 @@ body {
         font-size: 5px;
         height: 1px
     }
-    .shoes .owl-dots .owl-dot .active {
-        height: 1px
+    .shoes .owl-dots .owl-dot.active {
+        height: 1px;
+        font-size: 5px;
     }
 }
